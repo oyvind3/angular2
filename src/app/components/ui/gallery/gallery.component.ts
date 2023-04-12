@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -6,13 +6,14 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <p>
-      gallery works!
-    </p>
+  <div class="flex flex-row flex-wrap gap-2" >
+      <img *ngFor="let wine of wines"[src]="wine" />
+  </div>
   `,
   styles: [
   ]
 })
-export class GalleryComponent {
 
+export class GalleryComponent {
+  @Input() wines: string[] = [];
 }

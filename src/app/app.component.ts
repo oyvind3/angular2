@@ -11,9 +11,7 @@ import { Component } from '@angular/core';
   <link href="/dist/output.css" rel="stylesheet">
   </head>
   <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <h1 class="text-3xl font-bold underline"></h1>
   </body>
   </html>
     <router-outlet></router-outlet>
